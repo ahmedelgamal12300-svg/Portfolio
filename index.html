@@ -1,266 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmed ElGamal's Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahmed ElGamal — Data Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav class="navbar">
-        <div class="logo"><a href="#home">Ahmed ElGamal</a></div>
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+
+<!-- CANVAS BG -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">AEG<span>.dev</span></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-menu" id="nav-toggle" aria-label="Menu">
+    <i class="fas fa-bars" id="menu-icon"></i>
+  </button>
+</nav>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section id="home">
+  <div class="hero-content fade-up">
+    <div class="hero-badge">Available for work</div>
+    <div class="hero-sub">Data Engineer</div>
+    <h1 class="hero-title">Ahmed<br><span class="cyan">ElGamal</span></h1>
+    <p class="hero-desc">Aspiring Data Engineer focused on designing efficient data pipelines and delivering reliable, high-quality data solutions.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary"><i class="fas fa-eye"></i> View My Work</a>
+      <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Contact Me</a>
     </div>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1>Hi, I'm <span class="highlight">Ahmed ElGamal</span></h1>
-          <h2>Data Engineering</h2>
-          <p>Aspiring Data Engineer focused on designing efficient data pipelines and delivering reliable, high-quality data solutions.</p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-secondary">Contact Me</a>
-          </div>
-          <div class="social-icons">
-            <a href="https://github.com/ahmedelgamal12300-svg" target="_blank" class="social-icon github"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ahmed-elgamal-348192389" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto:ahmedelgamal12300@gmail.com" target="_blank" class="social-icon email"><i class="fa-solid fa-at"></i></a>
-            <a href="https://wa.me/201000081722" target="_blank" class="social-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#" target="_blank" class="social-icon file"><i class="fa-solid fa-file"></i></a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <img src="WhatsApp Image 2026-03-04 at 11.13.42 PM.jpeg" alt="Ahmed ElGamal">
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <div class="about-image">
-            <img src="657c2bfd9d07f76a47c70ce8_64c0dfda42c1ee625bb4640c_Blog20(1).webp" alt="About Me Image">
-          </div>
-          <div class="about-text">
-            <h3>Data Engineering</h3>
-            <p>I started studying Information Technology at Misr University for Science and Technology (MUST), and quickly discovered my passion for data. Working with Python and SQL, I realized how powerful data can be when organized and analyzed properly.</p>
-            <p>I enjoy turning raw data into meaningful insights and building systems that help decision-making. Now, I am focused on developing my skills in Data Engineering, aiming to create efficient and scalable data solutions.</p>
-            <ul>
-              <li><strong>From:</strong> Giza, Egypt</li>
-              <li><strong>Age:</strong> 20 years old</li>
-              <li><strong>Gender:</strong> Male</li>
-            </ul>
-            <a href="#contact" class="btn btn-primary">Hire</a>
-            <a href="#" class="btn btn-secondary">Download CV</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="about-content">
-          <div class="experience">
-            <h4>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-graduation-cap"></i> Rowad Masr Initiative - Data Engineer</a>
-            </h4>
-            <span class="date">2025 - 2026</span>
-            <p>Trained in building data pipelines, ETL processes, and database solutions. Gained practical skills to transform raw data into actionable insights.</p>
-          </div>
-          <div class="experience">
-            <h4>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-graduation-cap"></i> Python Programming Course</a>
-            </h4>
-            <span class="date">2024 - 2025</span>
-            <p>Focused on data manipulation, file handling, and Python libraries like Pandas and NumPy. Completed hands-on mini-projects to solve real-world data problems.</p>
-          </div>
-          <div class="experience">
-            <h4>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-graduation-cap"></i> Bachelor of Information Technology - MUST</a>
-            </h4>
-            <span class="date">2024 - 2028 <strong>(Expected)</strong></span>
-            <p>Studied programming, databases, and web development (HTML & CSS). Built a strong foundation to support a career in Data Engineering.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="project-grid">
-          <div class="project-item">
-            <img src="Screenshot 2026-03-03 013601.png" alt="Hotel-Booking Project">
-            <div class="project-overlay">
-              <h3>Hotel-Booking</h3>
-              <p></p>
-              <a href="https://github.com/ahmedelgamal12300-svg/Hotel-Booking-Cancellation-Analysis-Report.git" target="_blank" class="btn btn-secondary">View Project</a>
-            </div>
-          </div>
-          <div class="project-item">
-            <img src="closeup-hands-working-aipowered-business-600nw-2687083957.webp" alt="Project 2">
-            <div class="project-overlay">
-              <h3>Recipe Page</h3>
-              <p>HTML, CSS</p>
-              <a href="https://github.com/ahmedelgamal12300-svg/Personal-Portfolio" class="btn btn-secondary">View Project</a>
-            </div>
-          </div>
-          <div class="project-item">
-            <img src="closeup-hands-working-aipowered-business-600nw-2687083957.webp" alt="Project 3">
-            <div class="project-overlay">
-              <h3>Recipe Page</h3>
-              <p>HTML, CSS</p>
-              <a href="#" class="btn btn-secondary">View Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container">
-        <h2 class="section-title">Soft Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-item">
-            <h3>Analytical Thinking</h3>
-            <p>Problem solving, logical</p>
-          </div>
-          <div class="skill-item">
-            <h3>Organization</h3>
-            <p>Detail-oriented, structured</p>
-          </div>
-          <div class="skill-item">
-            <h3>Independent Work</h3>
-            <p>Self-driven, proactive</p>
-          </div>
-          <div class="skill-item">
-            <h3>Continuous Learning</h3>
-            <p>Growth mindset, adaptable</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="technical-skills">
-      <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-item">
-            <i class="fa-brands fa-python skill-icon"></i>
-            <h3>Python Programming</h3>
-            <p>Data manipulation, problem solving</p>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-database skill-icon"></i>
-            <h3>SQL & Databases</h3>
-            <p>Querying, data management</p>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-cogs skill-icon"></i>
-            <h3>Data Engineering</h3>
-            <p>ETL pipelines, transformation</p>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-chart-bar skill-icon"></i>
-            <h3>Data Analysis & Visualization</h3>
-            <p>Insights, reporting, charts</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <h2 class="section-title">Services</h2>
-        <div class="services-grid">
-          <div class="service-item">
-            <i class="fa-solid fa-database service-icon"></i>
-            <h3>Data Pipelines</h3>
-            <p>Design and maintain efficient ETL pipelines for reliable data processing.</p>
-          </div>
-          <div class="service-item">
-            <i class="fa-solid fa-cogs service-icon"></i>
-            <h3>Data Engineering</h3>
-            <p>Transform raw data into structured formats ready for analysis.</p>
-          </div>
-          <div class="service-item">
-            <i class="fa-solid fa-chart-line service-icon"></i>
-            <h3>Data Analysis</h3>
-            <p>Analyze large datasets to extract actionable insights.</p>
-          </div>
-          <div class="service-item">
-            <i class="fa-solid fa-chart-bar service-icon"></i>
-            <h3>Visualization</h3>
-            <p>Create interactive dashboards and charts for better decision-making.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-          <div class="contact-info">
-            <h3>Contact Information</h3>
-            <p><i class="fas fa-map-marker-alt"></i> Giza, Egypt</p>
-            <p><i class="fas fa-phone"></i> +201000081722</p>
-            <p><i class="fas fa-envelope"></i> ahmedelgamal12300@gmail.com</p>
-            <div class="contact-social-icons">
-            <a href="https://github.com/ahmedelgamal12300-svg" target="_blank" class="social-icon github"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/ahmed-elgamal-348192389" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="mailto:ahmedelgamal12300@gmail.com" target="_blank" class="social-icon email"><i class="fa-solid fa-at"></i></a>
-      <a href="https://wa.me/201000081722" target="_blank" class="social-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-          </div>
-          <div class="contact-form">
-            <h3>Send Me a Message</h3>
-            <form id="portfolio-contact-form" action="https://formspree.io/f/xpqyawpy" method="POST">
-              <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <input type="email" name="email" placeholder="Your Email" required>
-              </div>
-              <div class="form-group">
-                <input type="text" name="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Ahmed ElGamal. All Rights Reserved.</p>
-    <div class="footer-social-icons">
-      <a href="https://github.com/ahmedelgamal12300-svg" target="_blank" class="social-icon github"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/ahmed-elgamal-348192389" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="mailto:ahmedelgamal12300@gmail.com" target="_blank" class="social-icon email"><i class="fa-solid fa-at"></i></a>
-      <a href="https://wa.me/201000081722" target="_blank" class="social-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+    <div class="hero-socials">
+      <a href="https://github.com/ahmedelgamal12300-svg" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ahmed-elgamal-348192389" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:ahmedelgamal12300@gmail.com"><i class="fa-solid fa-at"></i></a>
+      <a href="https://wa.me/201000081722" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#" target="_blank"><i class="fa-solid fa-file"></i></a>
     </div>
-  </footer>
+  </div>
+
+  <div class="hero-visual fade-up">
+    <div class="hero-img-wrap">
+      <img src="WhatsApp Image 2026-03-04 at 11.13.42 PM.jpeg" alt="Ahmed ElGamal"
+           onerror="this.outerHTML='<div class=img-fallback><i class=fas&#32;fa-user-circle></i><span>Ahmed ElGamal</span></div>'"/>
+    </div>
+    <div class="hero-float-card">
+      <div class="dot"></div>
+      <span>Open to Opportunities</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     ABOUT
+══════════════════════════════ -->
+<section id="about">
+  <div class="about-img fade-up">
+    <img src="657c2bfd9d07f76a47c70ce8_64c0dfda42c1ee625bb4640c_Blog20(1).webp"
+         alt="About Me Image"
+         onerror="this.style.display='none'"/>
+  </div>
+  <div class="about-text fade-up">
+    <div class="section-tag">About Me</div>
+    <h2 class="section-title">Turning Raw Data<br>Into Insights</h2>
+    <p class="about-p">I started studying Information Technology at Misr University for Science and Technology (MUST), and quickly discovered my passion for data. Working with Python and SQL, I realized how powerful data can be when organized and analyzed properly.</p>
+    <p class="about-p" style="margin-bottom:2rem;">I enjoy turning raw data into meaningful insights and building systems that help decision-making. Now, I am focused on developing my skills in Data Engineering, aiming to create efficient and scalable data solutions.</p>
+    <div class="about-info-grid">
+      <div class="info-pill"><span>From</span> Giza, Egypt</div>
+      <div class="info-pill"><span>Age</span> 20 Years Old</div>
+      <div class="info-pill"><span>Gender</span> Male</div>
+      <div class="info-pill"><span>Focus</span> Data Engineering</div>
+    </div>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-primary"><i class="fas fa-handshake"></i> Hire</a>
+      <a href="#" class="btn btn-ghost"><i class="fas fa-download"></i> Download CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     EDUCATION
+══════════════════════════════ -->
+<section id="education">
+  <div class="fade-up">
+    <div class="section-tag">My Journey</div>
+    <h2 class="section-title">Education</h2>
+    <p class="section-desc">Building a strong technical foundation through formal education and specialized training programs.</p>
+  </div>
+  <div class="edu-timeline">
+
+    <div class="edu-item fade-up">
+      <div class="edu-dot"></div>
+      <div class="edu-year">2025 — 2026</div>
+      <h3 class="edu-title"><i class="fa-solid fa-graduation-cap"></i> Rowad Masr Initiative — Data Engineer</h3>
+      <p class="edu-desc">Trained in building data pipelines, ETL processes, and database solutions. Gained practical skills to transform raw data into actionable insights.</p>
+    </div>
+
+    <div class="edu-item fade-up">
+      <div class="edu-dot"></div>
+      <div class="edu-year">2024 — 2025</div>
+      <h3 class="edu-title"><i class="fa-solid fa-graduation-cap"></i> Python Programming Course</h3>
+      <p class="edu-desc">Focused on data manipulation, file handling, and Python libraries like Pandas and NumPy. Completed hands-on mini-projects to solve real-world data problems.</p>
+    </div>
+
+    <div class="edu-item fade-up">
+      <div class="edu-dot"></div>
+      <div class="edu-year">2024 — 2028 <strong>(Expected)</strong></div>
+      <h3 class="edu-title"><i class="fa-solid fa-graduation-cap"></i> Bachelor of Information Technology — MUST</h3>
+      <p class="edu-desc">Studied programming, databases, and web development (HTML &amp; CSS). Built a strong foundation to support a career in Data Engineering.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     PROJECTS
+══════════════════════════════ -->
+<section id="projects">
+  <div class="fade-up">
+    <div class="section-tag">My Work</div>
+    <h2 class="section-title">Projects</h2>
+    <p class="section-desc">Real-world projects built to solve data problems and demonstrate engineering skills.</p>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card fade-up">
+      <img class="project-thumb"
+           src="Screenshot 2026-03-03 013601.png"
+           alt="Hotel-Booking Project"/>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Data Analysis</span>
+        </div>
+        <h3 class="project-name">Hotel-Booking</h3>
+        <p class="project-desc">Cancellation analysis report for hotel booking data — uncovering patterns and building actionable insights.</p>
+        <a href="https://github.com/ahmedelgamal12300-svg/Hotel-Booking-Cancellation-Analysis-Report.git"
+           target="_blank" class="project-link">
+          View Project <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <img class="project-thumb"
+           src="closeup-hands-working-aipowered-business-600nw-2687083957.webp"
+           alt="Recipe Page"/>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+        </div>
+        <h3 class="project-name">Recipe Page</h3>
+        <p class="project-desc">A clean, responsive recipe page built from scratch using semantic HTML and modern CSS techniques.</p>
+        <a href="https://github.com/ahmedelgamal12300-svg/Personal-Portfolio"
+           target="_blank" class="project-link">
+          View Project <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <img class="project-thumb"
+           src="closeup-hands-working-aipowered-business-600nw-2687083957.webp"
+           alt="Recipe Page"/>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+        </div>
+        <h3 class="project-name">Recipe Page</h3>
+        <p class="project-desc">A clean, responsive recipe page built from scratch using semantic HTML and modern CSS techniques.</p>
+        <a href="#" class="project-link">
+          View Project <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SKILLS
+══════════════════════════════ -->
+<section id="skills">
+  <div class="fade-up">
+    <div class="section-tag">What I Know</div>
+    <h2 class="section-title">Skills</h2>
+    <p class="section-desc">A blend of technical expertise and professional soft skills that drive quality data work.</p>
+  </div>
+  <div class="skills-wrapper">
+
+    <div>
+      <div class="skill-group-title">// Technical Skills</div>
+
+      <div class="skill-item fade-up">
+        <div class="skill-header">
+          <span class="skill-name"><i class="fa-brands fa-python"></i> Python Programming</span>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+      </div>
+
+      <div class="skill-item fade-up">
+        <div class="skill-header">
+          <span class="skill-name"><i class="fa-solid fa-database"></i> SQL &amp; Databases</span>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div>
+      </div>
+
+      <div class="skill-item fade-up">
+        <div class="skill-header">
+          <span class="skill-name"><i class="fa-solid fa-cogs"></i> Data Engineering / ETL</span>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="75"></div></div>
+      </div>
+
+      <div class="skill-item fade-up">
+        <div class="skill-header">
+          <span class="skill-name"><i class="fa-solid fa-chart-bar"></i> Data Analysis &amp; Visualization</span>
+          <span class="skill-pct">78%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="78"></div></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="skill-group-title">// Soft Skills</div>
+      <div class="soft-grid">
+        <div class="soft-card fade-up">
+          <i class="fas fa-brain"></i>
+          <h4>Analytical Thinking</h4>
+          <p>Problem solving, logical</p>
+        </div>
+        <div class="soft-card fade-up">
+          <i class="fas fa-tasks"></i>
+          <h4>Organization</h4>
+          <p>Detail-oriented, structured</p>
+        </div>
+        <div class="soft-card fade-up">
+          <i class="fas fa-user-cog"></i>
+          <h4>Independent Work</h4>
+          <p>Self-driven, proactive</p>
+        </div>
+        <div class="soft-card fade-up">
+          <i class="fas fa-seedling"></i>
+          <h4>Continuous Learning</h4>
+          <p>Growth mindset, adaptable</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SERVICES
+══════════════════════════════ -->
+<section id="services">
+  <div class="fade-up">
+    <div class="section-tag">What I Offer</div>
+    <h2 class="section-title">Services</h2>
+    <p class="section-desc">End-to-end data solutions from pipeline design to actionable visualization.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card fade-up">
+      <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+      <h3>Data Pipelines</h3>
+      <p>Design and maintain efficient ETL pipelines for reliable data processing.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon"><i class="fa-solid fa-cogs"></i></div>
+      <h3>Data Engineering</h3>
+      <p>Transform raw data into structured formats ready for analysis.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+      <h3>Data Analysis</h3>
+      <p>Analyze large datasets to extract actionable insights.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon"><i class="fa-solid fa-chart-bar"></i></div>
+      <h3>Visualization</h3>
+      <p>Create interactive dashboards and charts for better decision-making.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CONTACT
+══════════════════════════════ -->
+<section id="contact">
+  <div class="fade-up">
+    <div class="section-tag">Get In Touch</div>
+    <h2 class="section-title">Let's Work<br>Together</h2>
+    <p class="contact-intro">Have a project or opportunity in mind? I'd love to hear from you.</p>
+
+    <div class="contact-info-item">
+      <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div>
+        <h4>Location</h4>
+        <p>Giza, Egypt</p>
+      </div>
+    </div>
+    <div class="contact-info-item">
+      <div class="contact-icon"><i class="fas fa-phone"></i></div>
+      <div>
+        <h4>Phone</h4>
+        <a href="tel:+201000081722">+201000081722</a>
+      </div>
+    </div>
+    <div class="contact-info-item">
+      <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+      <div>
+        <h4>Email</h4>
+        <a href="mailto:ahmedelgamal12300@gmail.com">ahmedelgamal12300@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="contact-socials">
+      <a href="https://github.com/ahmedelgamal12300-svg" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ahmed-elgamal-348192389" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:ahmedelgamal12300@gmail.com"><i class="fa-solid fa-at"></i></a>
+      <a href="https://wa.me/201000081722" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- الفورم الأصلي بنفس Formspree -->
+  <div class="fade-up">
+    <div class="contact-form">
+      <form id="portfolio-contact-form"
+            action="https://formspree.io/f/xpqyawpy"
+            method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label>YOUR NAME</label>
+            <input type="text" name="name" placeholder="Your Name" required/>
+          </div>
+          <div class="form-group">
+            <label>YOUR EMAIL</label>
+            <input type="email" name="email" placeholder="Your Email" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>SUBJECT</label>
+          <input type="text" name="subject" placeholder="Subject" required/>
+        </div>
+        <div class="form-group">
+          <label>MESSAGE</label>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <a href="#home">Ahmed ElGamal</a>. All Rights Reserved.</p>
+  <div class="footer-links">
+    <a href="https://github.com/ahmedelgamal12300-svg" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/ahmed-elgamal-348192389" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="mailto:ahmedelgamal12300@gmail.com"><i class="fa-solid fa-at"></i></a>
+    <a href="https://wa.me/201000081722" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
